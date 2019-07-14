@@ -17,6 +17,7 @@ export default function MonthView(props) {
     activeStartDate,
     locale,
     showFixedNumberOfWeeks,
+    markedDates,
   } = props;
   const {
     calendarType: calendarTypeProps,
@@ -110,6 +111,7 @@ export default function MonthView(props) {
     return (
       <Days
         calendarType={calendarType}
+        markedDates={markedDates}
         {...childProps}
       />
     );

@@ -1,10 +1,10 @@
 {
-  "name": "react-calendar",
-  "version": "2.19.0",
+  "name": "@jozekcore/react-calendar",
+  "version": "2.19.27",
   "description": "Ultimate calendar for your React app.",
   "main": "dist/entry.js",
   "source": "src/entry.js",
-  "types": "./index.d.ts",
+  "types": "./types.d.ts",
   "scripts": {
     "build": "yarn build-js && yarn copy-styles && yarn build-styles && yarn copy-types",
     "build-js": "babel src -d dist --ignore **/__tests__",
@@ -35,34 +35,15 @@
     "month-picker",
     "react"
   ],
-  "author": {
-    "name": "Wojciech Maj",
-    "email": "kontakt@wojtekmaj.pl"
-  },
+  "author": "Wojciech Maj <kontakt@wojtekmaj.pl>",
   "contributors": [
-    {
-      "name": "Andriy Kuzyk"
-    },
-    {
-      "name": "Baldur Árnason"
-    },
-    {
-      "name": "Jack Willis-Craig"
-    },
-    {
-      "name": "JamieEgeberg"
-    },
-    {
-      "name": "Justin Davis"
-    },
-    {
-      "name": "Kevin Kipp",
-      "email": "kevin.kipp@gmail.com"
-    },
-    {
-      "name": "Ritesh Kumar",
-      "email": "rkritesh078@gmail.com"
-    }
+    "Andriy Kuzyk",
+    "Baldur Árnason",
+    "Jack Willis-Craig",
+    "JamieEgeberg",
+    "Justin Davis",
+    "Kevin Kipp <kevin.kipp@gmail.com>",
+    "Ritesh Kumar <rkritesh078@gmail.com>"
   ],
   "license": "MIT",
   "dependencies": {
@@ -106,6 +87,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wojtekmaj/react-calendar.git"
+    "url": "git+https://github.com/jozekcore/react-calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jozekcore/react-calendar/issues"
+  },
+  "homepage": "https://github.com/jozekcore/react-calendar#readme",
+  "directories": {
+    "test": "test"
   }
 }

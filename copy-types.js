@@ -7,3 +7,11 @@ fs.copyFile('entry.nostyle.d.ts', 'dist/entry.nostyle.d.ts', (error) => {
   // eslint-disable-next-line no-console
   console.log('entry.nostyle.d.ts copied successfully.');
 });
+
+fs.copyFile('types.d.ts', 'dist/types.d.ts', (error) => {
+  if (error) {
+    throw error;
+  }
+  // eslint-disable-next-line no-console
+  console.log('entry.nostyle.d.ts copied successfully.');
+});

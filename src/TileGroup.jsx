@@ -19,6 +19,7 @@ const TileGroup = ({
   tile: Tile,
   value,
   valueType,
+  markedDates,
   ...tileProps
 }) => {
   const tiles = [];
@@ -33,6 +34,7 @@ const TileGroup = ({
         date={date}
         point={point}
         key={date.getTime()}
+        markedDates={markedDates}
         {...tileProps}
       />,
     );

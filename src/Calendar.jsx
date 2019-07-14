@@ -259,7 +259,7 @@ export default class Calendar extends Component {
 
     this.setState({ activeStartDate }, () => {
       const { view } = this.state;
-
+      this.onChange(activeStartDate);
       callIfDefined(onActiveDateChange, {
         activeStartDate,
         view,
@@ -366,6 +366,7 @@ export default class Calendar extends Component {
       tileClassName,
       tileContent,
       tileDisabled,
+      markedDates,
     } = this.props;
     const {
       activeStartDate, hover, value, view,
@@ -384,6 +385,7 @@ export default class Calendar extends Component {
       tileDisabled,
       value,
       valueType,
+      markedDates,
     };
 
     const clickAction = this.drillDownAvailable ? this.drillDown : this.onChange;

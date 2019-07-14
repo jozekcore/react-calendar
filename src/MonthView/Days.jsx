@@ -16,6 +16,7 @@ export default function Days(props) {
   const {
     activeStartDate,
     calendarType,
+    markedDates,
   } = props;
   const {
     showFixedNumberOfWeeks,
@@ -70,6 +71,7 @@ export default function Days(props) {
       offset={offset}
       start={start}
       tile={Day}
+      markedDates={markedDates}
       // Tile props
       currentMonthIndex={monthIndex}
     />

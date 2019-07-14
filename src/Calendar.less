@@ -2,7 +2,6 @@
   width: 350px;
   max-width: 100%;
   background: white;
-  border: 1px solid rgb(160, 160, 150);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.125em;
 
@@ -86,6 +85,10 @@
   &__century-view {
     .react-calendar__tile {
       padding: 2em .5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   }
 
@@ -94,6 +97,11 @@
     text-align: center;
     padding: .75em .5em;
     background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
 
     &:disabled {
       background-color: rgb(240, 240, 240);
@@ -106,8 +114,9 @@
     }
 
     &--hasActive {
-      @bgcolor: lighten(rgb(0, 110, 220), 30%);
+      @bgcolor: rgb(219, 56,108);
       background: @bgcolor;
+      border-radius: 30px;
 
       &:enabled {
         &:hover, &:focus {
@@ -117,9 +126,10 @@
     }
 
     &--active {
-      @bgcolor: rgb(0, 110, 220);
+      @bgcolor: rgb(219, 56, 108);
       background: @bgcolor;
       color: white;
+      border-radius: 30px;
 
       &:enabled {
         &:hover, &:focus {

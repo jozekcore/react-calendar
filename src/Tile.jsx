@@ -47,6 +47,7 @@ export default class Tile extends Component {
       style,
       tileDisabled,
       view,
+      markedDates,
     } = this.props;
     const { tileClassName, tileContent } = this.state;
 
@@ -73,6 +74,11 @@ export default class Tile extends Component {
           : children
         }
         {tileContent}
+        {
+          markedDates.includes(date.toISOString().slice(0, 10)) && (
+            <div style={{width: 5, height: 5, backgroundColor: '#53da53', borderRadius: 25}}/>
+          )
+        }
       </button>
     );
   }
